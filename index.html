@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="browsermode" content="application">
+        <meta name="x5-page-mode" content="app">
+        <title>Panda's Mirror</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/pagedown@1.1.0/node-pagedown.min.js"></script> -->
+        <script src="https://cdn.bootcss.com/marked/0.6.2/marked.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/avalon2@2.2.10/dist/avalon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-yaml@3.13.0/dist/js-yaml.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/messenger-hubspot@1.5.0/build/js/messenger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/messenger-hubspot@1.5.0/build/js/messenger-theme-future.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@3.0.1/github-markdown.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/messenger-hubspot@1.5.0/build/css/messenger.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/messenger-hubspot@1.5.0/build/css/messenger-theme-future.min.css">
+        <link href="/public/css/base.css" rel="stylesheet">
+        <script src="/public/js/base.js?v=2"></script>
+    </head>
+    <body>
+            <span class="messenger-spinner-side messenger-spinner-side-left"></span>
+            <span class="messenger-spinner-fill"></span>
+            <span class="messenger-spinner-side messenger-spinner-side-right"></span>
+            <span class="messenger-spinner-fill"></span>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span><span class="icon-bar"></span>
+                            <span class="icon-bar"></span></button><a class="navbar-brand" href="/">Panda's Mirror</a></div>
+                            <div id="nav" class="navbar-collapse collapse" role="navigation" aria-expanded="false" style="height: 1px;">
+                            <ul class="nav navbar-nav hidden-sm">
+                                <li><a href="/free.html">免费插件</a></li>
+                                <li><a href="/buy.html">购买插件</a></li>
+                                <li><a href="/dz.html">定制插件</a></li>
+                                <li><a href="/zc.html">众筹插件</a></li>
+                                <li><a href="/zz.html">赞助商城</a></li>
+                            </ul>
+                        </button> 
+                    </div>
+                </div>
+            </nav>
+            <div class="container bs-docs-container">
+                <div class="row">
+                    <div>
+                        <div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>插件名称</th>
+                                            <th>英文名称</th>
+                                            <th>插件描述(点击查看完整简介)</th>
+                                            <th>源码地址</th>
+                                            <th>构建状态</th>
+                                            <th>更新日志</th>
+                                            <th>下载地址</th>
+                                            <th>使用统计</th>
+                                        </tr>
+                                    </thead>
+                                <tbody>
+                            <!--ms-for:el in @plugins-->
+                            <tr>
+                                <td>超级跳板</td>
+                                <td>JumpPlate</td>
+                                <td><a href="#JumpPlate-description">好玩的超级跳板(1907)</a></td>
+                                <td><a href="#JumpPlate-src">源码(1944)</a></td>
+                                <td><img src="https://ci.yumc.pw/job/Minecraft/job/JumpPlate/badge/icon"></td>
+                                <td><a href="#JumpPlate-changes">查看(555)</a></td>
+                                <td><!--if--><a class="text-info" href="#JumpPlate-download">下载(1692)</a></td>
+                                <td><a href="#JumpPlate-static">查看(431)</a></td>
+                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
