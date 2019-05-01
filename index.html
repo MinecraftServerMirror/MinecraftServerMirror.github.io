@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head>
+<html lang="zh-CN">
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -20,6 +21,24 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/messenger-hubspot@1.5.0/build/css/messenger-theme-future.min.css">
         <link href="/public/css/base.css" rel="stylesheet">
         <script src="/public/js/base.js?v=2"></script>
+        <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                html,body{
+                    height: 100%;
+                }
+                .wrap{
+                    height: 100%;
+                    background-color: blue;
+                }
+                .footer{
+                    position:absolute;
+                    bottom:0;
+                    height:50px;
+                }
+            </style>
     </head>
     <body>
             <span class="messenger-spinner-side messenger-spinner-side-left"></span>
@@ -43,38 +62,50 @@
                 </div>
             </nav>
             <div class="container bs-docs-container">
-                <div class="row">
-                    <div>
-                        <div>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>核心名称</th>
-                                            <th>插件描述(点击查看完整简介)</th>
-                                            <th>源码地址</th>
-                                            <th>构建状态</th>
-                                            <th>更新日志</th>
-                                            <th>下载地址</th>
-                                            <th>使用统计</th>
-                                        </tr>
-                                    </thead>
-                                <tbody>
-                            <!--ms-for:el in @plugins-->
-                            <tr>
-                                <td>超级跳板</td>
-                                <td>JumpPlate</td>
-                                <td><a href="#JumpPlate-description">好玩的超级跳板(1907)</a></td>
-                                <td><a href="#JumpPlate-src">源码(1944)</a></td>
-                                <td><img src="https://ci.yumc.pw/job/Minecraft/job/JumpPlate/badge/icon"></td>
-                                <td><a href="#JumpPlate-changes">查看(555)</a></td>
-                                <td><!--if--><a class="text-info" href="#JumpPlate-download">下载(1692)</a></td>
-                                <td><a href="#JumpPlate-static">查看(431)</a></td>
-                            </tr>
+                <div class="html">
+                    <div class="row">
+                        <div class="body">
+                            <div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>核心名称</th>
+                                                <th>插件描述(点击查看完整简介)</th>
+                                                <th>源码地址</th>
+                                                <th>构建状态</th>
+                                                <th>更新日志</th>
+                                                <th>下载地址</th>
+                                            </tr>
+                                        </thead>
+                                    <tbody>
+                                <!--ms-for:el in @plugins-->
+                                <!--
+                                    <tr>
+                                        <td>超级跳板</td>
+                                        <td>JumpPlate</td>
+                                        <td><a href="#JumpPlate-description">好玩的超级跳板(1907)</a></td>
+                                        <td><a href="#JumpPlate-src">源码(1944)</a></td>
+                                        <td><img src="https://ci.yumc.pw/job/Minecraft/job/JumpPlate/badge/icon"></td>
+                                        <td><a href="#JumpPlate-changes">查看(555)</a></td>
+                                        <td><a class="text-info" href="#JumpPlate-download">下载(1692)</a></td>
+                                        <td><a href="#JumpPlate-static">查看(431)</a></td>
+                                    </tr>
+                                -->
+                                    <tr>
+                                        <td>spigot</td>
+                                        <td>纯净插件端</td>
+                                        <td>-</td>
+                                        <td><img src="https://www.travis-ci.com/MinecraftServerMirror/Server-Core.svg?branch=master"></td>
+                                    </tr>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <br />
+        <hr>
+		<footer class="footer">声明：<br /><p class="pull-right">1.本网站是在<a href="http://w.yumc.pw">yum</a>的基础上写出来的<br />2.</p></footer>
     </body>
 </html>
